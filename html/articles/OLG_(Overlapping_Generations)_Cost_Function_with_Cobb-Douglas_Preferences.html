@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="generator" content="litedown 0.7">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+</div>
+<div class="body">
+<p><a href="../index.html">← Back to Index</a></p>
+<h1 id="olg-overlapping-generations-cost-function-with-cobb-douglas-preferences">OLG (Overlapping Generations) Cost Function with Cobb-Douglas Preferences</h1>
+<p><strong>OGGLA (Overlapping Generations) Cost Function with Cobb-Douglas Preferences</strong></p>
+<p>In economics, a cost function is a mathematical representation of how the marginal costs of production change as the quantity produced changes. In other words, it shows how the additional units of a good or service lead to an increase in costs. The concept of cost functions has far-reaching implications in various fields, including business, finance, and policy analysis. One such cost function is the Overlapping Generations (OGGLA) cost function, which is used to model the behavior of firms that produce goods with multiple generations or stages.</p>
+<p><strong>What is OGGLA?</strong></p>
+<p>The OGGLA cost function is a type of cost function that assumes that firms produce goods and services in a series of stages, where each stage has its own set of costs. The cost functions for different stages are typically linear, meaning that the marginal cost of producing one unit increases linearly with the quantity produced. For example, if a firm produces apples at a cost of $1 per kilogram, it will produce 2 kilograms of apples in Stage 1 and then 4 kilograms in Stage 2, resulting in an additional $0.50 per kilogram for each stage.</p>
+<p><strong>The OGGLA Cost Function</strong></p>
+<p>The OGGLA cost function is defined as:</p>
+<p>OGGLA(x) = x * (1 - (1/n))^(-1/m), where x is the quantity produced, n is the number of stages, and m is the average marginal cost per stage.</p>
+<p>In this equation, <code>x</code> represents the quantity produced in each stage, <code>n</code> is the number of stages, and <code>m</code> is the average marginal cost per stage. The function returns a value between 0 (where no production occurs) and 1 (where all production occurs).</p>
+<p><strong>How OGGLA Works</strong></p>
+<p>The OGGLA cost function assumes that firms produce goods in a series of stages, where each stage has its own set of costs. As the quantity produced increases, the marginal cost of producing one unit decreases linearly with the quantity produced. This means that as the number of stages increases, the average marginal cost per stage also increases linearly.</p>
+<p>The OGGLA cost function is useful in several ways:</p>
+<ol>
+<li><strong>Firm behavior</strong>: The OGGLA cost function helps firms understand how they respond to changes in production levels. As the quantity produced increases, the firm’s costs decrease, and as it decreases, its marginal cost increases. This means that as firms produce more goods, they must absorb a larger proportion of their costs, which can lead to higher prices or lower profit margins.</li>
+<li><strong>Price elasticity</strong>: The OGGLA cost function is used to estimate price elasticity, which measures how changes in demand affect the quantity demanded. A positive price elasticity indicates that an increase in demand leads to an increase in price, while a negative elasticity indicates a decrease in price.</li>
+<li><strong>Monetary policy</strong>: The OGGLA cost function can be used to model monetary policy decisions. For example, if a government increases its spending on goods and services, it may lead to higher prices or lower production levels, which could affect the OGGLA cost function.</li>
+<li><strong>Economic growth</strong>: The OGGLA cost function is useful in understanding economic growth. As firms produce more goods and services, they must absorb a larger proportion of their costs, which can lead to higher prices or lower profit margins.</li>
+<li><strong>Fiscal policy</strong>: The OGGLA cost function can be used to model fiscal policy decisions. For example, if a government increases its spending on education or healthcare, it may lead to an increase in demand for goods and services, which could affect the OGGLA cost function.</li>
+</ol>
+<p><strong>Limitations of the OGGLA Cost Function</strong></p>
+<p>While the OGGLA cost function is useful in understanding firm behavior and economic growth, it has some limitations:</p>
+<ol>
+<li><strong>Oversimplification</strong>: The OGGLA cost function assumes that firms produce goods and services in a linear sequence, which may not always be the case.</li>
+<li><strong>Ignores other factors</strong>: The OGGLA cost function does not account for other factors that influence firm behavior, such as technology, competition, or government policies.</li>
+<li><strong>Difficulty in modeling non-linear relationships</strong>: The OGGLA cost function can be difficult to model when the relationships between variables are complex or nonlinear.</li>
+</ol>
+<p>In conclusion, the Overlapping Generations (OGGLA) cost function is a powerful tool for understanding firm behavior and economic growth. While it has some limitations, it remains a useful framework for policymakers, business leaders, and economists seeking insights into how firms respond to changes in production levels and other factors that influence their behavior.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Samuelson_Game_Theory_in_Repeated_Games.html">Samuelson Game Theory in Repeated Games</a></p>
+<p><a href="Spence_Stability_in_Continuous_Time.html">Spence Stability in Continuous Time</a></p>
+<p><a href="Samuelson_Savings_in_Partial_Equilibrium.html">Samuelson Savings in Partial Equilibrium</a></p>
+<p><a href="Real_Business_Cycle_Identification_with_Heterogeneous_Agents.html">Real Business Cycle Identification with Heterogeneous Agents</a></p>
+<p><a href="Arrow_Equilibrium_with_Quasi-Linear_Preferences.html">Arrow Equilibrium with Quasi-Linear Preferences</a></p>
+</div>
+</body>
+</html>
+
