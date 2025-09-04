@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+<div class="author"><h2></h2></div>
+<div class="date"><h3></h3></div>
+</div>
+<div class="body">
+<h1 id="debreu-expenditure-function-in-incomplete-markets">Debreu Expenditure Function in Incomplete Markets</h1>
+<p><strong>Debreu Expenditure Function in Incomplete Markets</strong></p>
+<p>Incomplete markets, also known as imperfectly competitive markets, are a type of market structure where firms have some degree of control over their output and pricing. These markets can be characterized by factors such as asymmetric information, non-price barriers to entry, and the presence of multiple suppliers or buyers. Debreu’s Expenditure Function is a fundamental concept in microeconomics that helps explain how these markets allocate resources efficiently.</p>
+<p><strong>What is Debreu’s Expenditure Function?</strong></p>
+<p>Debreu’s Expenditure Function is a mathematical model that describes the behavior of firms in complete markets. It was developed by economist Amartya Sen in 1967 and has since become a widely used tool for analyzing market structures. The function takes into account three key assumptions:</p>
+<ol>
+<li><strong>Asymmetric information</strong>: Firms have some degree of knowledge about their customers’ preferences, needs, or other relevant factors that affect their behavior.</li>
+<li><strong>Non-price barriers to entry</strong>: Firms may face obstacles in entering the market, such as high startup costs, regulatory hurdles, or exclusive contracts with suppliers.</li>
+<li><strong>Multiple suppliers or buyers</strong>: Firms can have multiple customers or suppliers, which affects their ability to allocate resources efficiently.</li>
+</ol>
+<p>The Debreu Expenditure Function is a function that maps the quantity of goods and services produced by firms in an economy to the amount spent on those inputs. It’s calculated as:</p>
+<p>Debreu Expenditure Function = (Total Output - Asymmetric Information) * (Non-Price Barriers to Entry + Multiple Suppliers or Buyers)</p>
+<p><strong>How Debreu Expenditure Function Works in Complete Markets</strong></p>
+<p>In a complete market, firms have some control over their output and pricing. The Debreu Expenditure Function helps explain how these firms allocate resources efficiently:</p>
+<ol>
+<li><strong>Firms with high Asymmetric Information</strong>: Firms that have high levels of asymmetric information (e.g., they don’t know the exact preferences or needs of their customers) may spend more on inputs, such as labor and materials, to compensate for this lack of knowledge.</li>
+<li><strong>Firms with Non-Price Barriers to Entry</strong>: Firms with non-price barriers to entry (e.g., high startup costs or exclusive contracts) may invest more in research and development, which increases their output but also reduces the amount spent on inputs.</li>
+<li><strong>Multiple Suppliers or Buyers</strong>: Firms that have multiple suppliers or buyers can allocate resources more efficiently by allocating them across different markets or regions. This allows firms to respond quickly to changes in demand or supply conditions.</li>
+<li><strong>Firms with Low Asymmetric Information and Non-Price Barriers to Entry</strong>: Firms with low levels of asymmetric information (e.g., they don’t have complete knowledge about their customers’ preferences) but no non-price barriers to entry can allocate resources more efficiently by allocating inputs across different markets or regions.</li>
+</ol>
+<p><strong>Implications for Markets in Complete Markets</strong></p>
+<p>The Debreu Expenditure Function has several implications for markets in complete markets:</p>
+<ol>
+<li><strong>Firms with high Asymmetric Information</strong>: Firms that have high levels of asymmetric information (e.g., they don’t know the exact preferences or needs of their customers) may face challenges in allocating resources efficiently, as they need to invest more in research and development to respond to changing demand patterns.</li>
+<li><strong>Firms with low Asymmetric Information but no Non-Price Barriers to Entry</strong>: Firms with low levels of asymmetric information (e.g., they don’t have complete knowledge about their customers’ preferences) but no non-price barriers to entry can allocate resources more efficiently by allocating inputs across different markets or regions, as firms need to respond quickly to changes in demand patterns.</li>
+<li><strong>Firms with low Asymmetric Information and Non-Price Barriers to Entry</strong>: Firms with low levels of asymmetric information (e.g., they don’t have complete knowledge about their customers’ preferences) but no non-price barriers to entry can allocate resources more efficiently by allocating inputs across different markets or regions, as firms need to respond quickly to changes in demand patterns.</li>
+</ol>
+<p>In conclusion, Debreu’s Expenditure Function is a powerful tool for analyzing market structures in complete markets. By understanding how firms allocate resources and respond to changes in demand patterns, economists can gain insights into the efficiency of market mechanisms and inform policy decisions aimed at promoting economic growth and welfare.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Tatonnement_Savings_with_Behavioral_Biases.html">Tatonnement Savings with Behavioral Biases</a></p>
+<p><a href="Schumpeterian_Savings_with_Cobb-Douglas_Preferences.html">Schumpeterian Savings with Cobb-Douglas Preferences</a></p>
+<p><a href="Gross_Substitutes_Bargaining_in_Stochastic_Environments.html">Gross Substitutes Bargaining in Stochastic Environments</a></p>
+<p><a href="Afriat_Game_Theory_in_Continuous_Time.html">Afriat Game Theory in Continuous Time</a></p>
+<p><a href="Topkis_Estimation_in_Competitive_Markets.html">Topkis Estimation in Competitive Markets</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+<div class="author"><h2></h2></div>
+<div class="date"><h3></h3></div>
+</div>
+<div class="body">
+<h1 id="tullock-game-theory-with-cobb-douglas-preferences">Tullock Game Theory with Cobb-Douglas Preferences</h1>
+<p><strong>The Tullock Game Theory with Cobb-Douglas Preferences</strong></p>
+<p>In game theory, a Tullock game is a type of game where two players make decisions that affect each other’s outcomes. The goal is to maximize the overall payoff for both players. In the context of economics, a Tullock game can be applied to oligopolistic markets, where firms compete with each other and consumers have limited choices.</p>
+<p>The Tullock game is named after economist John Tullock, who first introduced it in the 1950s. The game involves two players, A and B, who make decisions that affect their own outcomes. The payoffs for both players are influenced by the actions of the other player.</p>
+<p>In a Tullock game with Cobb-Douglas preferences, each player’s decision affects the overall outcome of the game. The game is played on a two-dimensional grid, where each cell represents a possible action or strategy. The payoffs for each player are calculated based on their individual choices and the outcomes they expect from those actions.</p>
+<p><strong>Cobb-Douglas Preferences</strong></p>
+<p>In a Cobb-Douglas preference game, players have two types of preferences: convex and concave. Convex preferences describe situations where one person’s gain is greater than another person’s loss, while concave preferences describe the opposite.</p>
+<p>For example, in a Cobb-Douglas game with convex preferences, player A might choose to produce more units of good X if they expect to earn $100 per unit and lose $20 per unit. Player B would prefer to produce less than $100 per unit because they expect to earn $50 per unit and lose $30 per unit.</p>
+<p><strong>The Tullock Game</strong></p>
+<p>In a Tullock game, each player’s decision affects the overall outcome of the game. The payoffs for both players are influenced by their individual preferences and actions. The game is played on a two-dimensional grid, where each cell represents a possible action or strategy.</p>
+<p>The payoffs for each player depend on their individual preferences and the outcomes they expect from those actions. For example, if Player A prefers to produce more units of good X because it will earn $100 per unit and lose $20 per unit, while Player B prefers to produce less than $100 per unit because it will earn $50 per unit and lose $30 per unit, the game outcome would be different.</p>
+<p><strong>Key Features of Tullock Games with Cobb-Douglas Preferences</strong></p>
+<ol>
+<li><strong>Convexity</strong>: Players’ payoffs are influenced by their individual preferences and actions.</li>
+<li><strong>Cobb-Douglas preferences</strong>: Players have convex or concave preferences, which affect the game’s outcome.</li>
+<li><strong>Cooperative games</strong>: In a Tullock game with Cobb-Douglas preferences, players can cooperate to achieve better outcomes for all parties involved.</li>
+<li><strong>Coordination problems</strong>: The game involves coordination between players, as they need to adjust their actions to maximize overall payoffs.</li>
+<li><strong>Pareto optimality</strong>: The game is Pareto optimal, meaning that no player’s strategy can improve the outcome of the game without making someone else worse off.</li>
+</ol>
+<p><strong>Implications for Oligopolistic Markets</strong></p>
+<p>The Tullock game with Cobb-Douglas preferences has significant implications for oligopolistic markets. In these markets, firms often have a range of strategies to maximize their profits, including:</p>
+<ol>
+<li><strong>Cooperative behavior</strong>: Firms may cooperate to achieve better outcomes for all parties involved.</li>
+<li><strong>Coordination</strong>: Firms can coordinate their actions to improve overall performance and efficiency.</li>
+<li><strong>Pareto optimality</strong>: The game’s Pareto optimal nature ensures that no player’s strategy can improve the outcome of the game without harming others.</li>
+</ol>
+<p>In oligopolistic markets, firms must balance the benefits of cooperation with the costs of coordination. By understanding the Tullock game and its implications for oligopolistic markets, policymakers and business leaders can design strategies to promote cooperation while minimizing the negative consequences of coordination.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Pigouvian_Disequilibrium_with_Incomplete_Contracts.html">Pigouvian Disequilibrium with Incomplete Contracts</a></p>
+<p><a href="Schumpeterian_Savings_with_Cobb-Douglas_Preferences.html">Schumpeterian Savings with Cobb-Douglas Preferences</a></p>
+<p><a href="Arrow_Insurance_in_General_Equilibrium.html">Arrow Insurance in General Equilibrium</a></p>
+<p><a href="Slutsky_Disequilibrium_in_Rational_Expectations_Models.html">Slutsky Disequilibrium in Rational Expectations Models</a></p>
+<p><a href="DSGE_Growth_Model_in_Matching_Markets.html">DSGE Growth Model in Matching Markets</a></p>
+</div>
+</body>
+</html>
