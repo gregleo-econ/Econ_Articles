@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+<div class="author"><h2></h2></div>
+<div class="date"><h3></h3></div>
+</div>
+<div class="body">
+<p><a href="../index.html">← Back to Index</a></p>
+<h1 id="walrasian-efficiency-in-incomplete-markets">Walrasian Efficiency in Incomplete Markets</h1>
+<p><strong>The Efficient Market Hypothesis (EMH) and the Limitations of Walrasian Efficiency in Complete Markets</strong></p>
+<p>In the realm of finance, two dominant theories have shaped the way we think about markets and investment strategies. The Efficient Market Hypothesis (EMH), introduced by Eugene Fama in 1973, posits that financial markets are efficient and prices reflect all available information. This theory has been widely accepted as a fundamental principle of modern economics. However, the limitations of EMH have led to criticisms and challenges in its application to complete markets.</p>
+<p><strong>The Limitations of EMH in Complete Markets</strong></p>
+<p>Complete markets refer to situations where financial instruments are traded on a fully liquid market with no significant barriers to entry or exit. In these cases, EMH assumes that prices reflect all available information, which is often not the case. Complete markets can be characterized by:</p>
+<ol>
+<li><strong>Limited liquidity</strong>: Financial institutions may have limited ability to borrow money and sell securities at prevailing market prices.</li>
+<li><strong>High transaction costs</strong>: The cost of buying or selling financial instruments can be prohibitively high, making it difficult for investors to participate in the market.</li>
+<li><strong>Information asymmetry</strong>: Investors may not always have access to complete information about the state of the market, leading to mispricing and inefficient allocation of capital.</li>
+<li><strong>Risk aversion</strong>: Investors may be more risk-averse than they would be in a complete market, which can limit their ability to participate in markets with high transaction costs or limited liquidity.</li>
+</ol>
+<p>In these situations, EMH assumes that prices reflect all available information, but this assumption is often violated. Incomplete markets can lead to:</p>
+<ol>
+<li><strong>Over-specification</strong>: Investors may over-specify for a particular security, leading to excessive leverage and higher risk exposure.</li>
+<li><strong>Under-specification</strong>: Investors may under-specify for a particular security, leading to lower returns due to limited liquidity or information asymmetry.</li>
+<li><strong>Inefficient allocation of capital</strong>: Investors may not be able to allocate their capital efficiently in complete markets, as they may have limited access to financial instruments with low transaction costs.</li>
+</ol>
+<p><strong>The Limitations of EMH in Complete Markets</strong></p>
+<p>While EMH assumes that prices reflect all available information, it is a simplification of the market process and ignores several important factors:</p>
+<ol>
+<li><strong>Information asymmetry</strong>: EMH assumes that investors have complete knowledge about the state of the market, which may not always be the case.</li>
+<li><strong>Risk-taking behavior</strong>: Investors who take on excessive risk in complete markets are more likely to experience losses than gains, as they seek out higher returns but also face greater uncertainty and volatility.</li>
+<li><strong>Market structure</strong>: Complete markets can have different structures, such as those with multiple layers of financial intermediaries or those with limited liquidity. These structural differences can affect the behavior of investors and the prices of financial instruments.</li>
+<li><strong>Fractional reserve banking</strong>: Incomplete markets may not be fully supported by fractional reserve banking, which allows banks to lend out a portion of deposits rather than keeping them in reserve. This can lead to higher interest rates on loans and lower savings rates for individuals.</li>
+<li><strong>Regulatory constraints</strong>: Complete markets often have regulatory constraints that limit the ability of financial institutions to respond quickly to changes in market conditions or investor sentiment.</li>
+</ol>
+<p><strong>Conclusion</strong></p>
+<p>The Efficient Market Hypothesis (EMH) is a fundamental principle of modern finance, but it assumes that prices reflect all available information in complete markets. While EMH has been widely accepted as a theoretical framework, its limitations and criticisms highlight the need for more nuanced models that account for the complexities of real-world financial markets. Incomplete markets can lead to inefficient allocation of capital, higher risk exposure, and reduced investor returns. By acknowledging these limitations, we can develop more effective strategies for managing incomplete markets and promoting more efficient investment outcomes.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Mechanism_Design_Efficiency_in_Repeated_Games.html">Mechanism Design Efficiency in Repeated Games</a></p>
+<p><a href="Debreu_Game_Theory_in_Dynamic_Optimization.html">Debreu Game Theory in Dynamic Optimization</a></p>
+<p><a href="Gross_Substitutes_Phillips_Curve_with_Asymmetric_Information.html">Gross Substitutes Phillips Curve with Asymmetric Information</a></p>
+<p><a href="Spence_Collusion_with_Risk_Aversion.html">Spence Collusion with Risk Aversion</a></p>
+<p><a href="Lindahl_Information_Asymmetry_with_Asymmetric_Information.html">Lindahl Information Asymmetry with Asymmetric Information</a></p>
+</div>
+</body>
+</html>

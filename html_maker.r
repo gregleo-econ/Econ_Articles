@@ -25,8 +25,11 @@ list_of_html_filenames <- gsub("\\.md$", ".html", basename(markdown_files))
 list_of_markdown_articles <- sapply(markdown_files, readLines, warn = FALSE)
 list_of_markdown_articles <- sapply(list_of_markdown_articles, paste, collapse = "\n")
 
-# Add links to 5 random other articles for each article
+# Add "back to index" link and links to 5 random other articles for each article
 for (i in seq_along(list_of_markdown_articles)) {
+  # Add back to index link at the top
+  back_to_index_link <- "[← Back to Index](../index.html)\n\n"
+  
   # Get 5 random article indices (excluding current article)
   other_articles <- setdiff(seq_along(list_of_topics), i)
   if (length(other_articles) >= 5) {
@@ -41,7 +44,9 @@ for (i in seq_along(list_of_markdown_articles)) {
   })
   linked_articles_strings <- paste(linked_articles_strings, collapse = "  \n\n")
   linked_articles_strings <- paste0("## See also \n\n", linked_articles_strings)
-  list_of_markdown_articles[i] <- paste0(list_of_markdown_articles[i], "\n\n", linked_articles_strings)
+  
+  # Combine back to index link, original content, and see also links
+  list_of_markdown_articles[i] <- paste0(back_to_index_link, list_of_markdown_articles[i], "\n\n", linked_articles_strings)
 }
 
 # Convert markdown articles to HTML
