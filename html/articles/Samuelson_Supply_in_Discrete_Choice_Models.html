@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="generator" content="litedown 0.7">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+</div>
+<div class="body">
+<h1 id="samuelson-supply-in-discrete-choice-models">Samuelson Supply in Discrete Choice Models</h1>
+<p><strong>Samuelson Supply in Discrete Choice Models</strong></p>
+<p>In the field of economics, a discrete choice model is a mathematical framework used to study how individuals make decisions when faced with multiple options and limited resources. This type of model has been widely applied in various fields, including consumer behavior, healthcare, transportation, and more. One of the most influential and popular discrete choice models is Samuelson’s (1970) “Discrete Choice Model” (DCM).</p>
+<p><strong>Samuelson’s Discrete Choice Model</strong></p>
+<p>The DCM is a simple yet powerful model that assumes individuals make decisions based on their utility or preference values for each option. The model consists of three main components:</p>
+<ol>
+<li><strong>Utility function</strong>: This represents the individual’s willingness to pay for each option, which can be thought of as a linear combination of the options’ prices and benefits.</li>
+<li><strong>Demand curve</strong>: This is a graphical representation of how demand changes in response to price changes or other factors. The demand curve shows the relationship between the quantity demanded (Q) and its corresponding price (P).</li>
+<li><strong>Choice set</strong>: This component represents the range of options available, including their prices, quality, and other characteristics.</li>
+</ol>
+<p>The DCM assumes that individuals have a preference for each option, which can be represented as a linear combination of utility values. The model predicts that:</p>
+<ul>
+<li>As demand increases, the probability of choosing an option decreases, while the price remains constant.</li>
+<li>As demand decreases, the probability of choosing an option increases, while the price remains constant.</li>
+<li>As demand and price change simultaneously, the probability of choosing an option changes in a non-linear manner.</li>
+</ul>
+<p><strong>How the DCM Works</strong></p>
+<p>The DCM is applied to various types of discrete choice models, including:</p>
+<ol>
+<li><strong>Consumer behavior</strong>: The DCM can be used to study how consumers make decisions about purchasing goods and services, such as which brand of coffee to buy or which type of car to purchase.</li>
+<li><strong>Healthcare</strong>: The model can help understand how patients choose between different treatments or interventions for a particular condition.</li>
+<li><strong>Transportation</strong>: The DCM can be used to study how individuals make decisions about purchasing transportation services, such as bus routes or train schedules.</li>
+<li><strong>Marketing and advertising</strong>: The model can help marketers design more effective campaigns by understanding how consumers respond to different messaging and offers.</li>
+</ol>
+<p><strong>Advantages of the DCM</strong></p>
+<ol>
+<li><strong>Simplistic representation</strong>: The DCM is a simple, intuitive model that captures the basic principles of decision-making under uncertainty.</li>
+<li><strong>Flexibility</strong>: The model can be applied to various types of discrete choice models, making it a versatile tool for researchers and practitioners.</li>
+<li><strong>Interpretability</strong>: The DCM provides insights into how individuals make decisions in different situations, which is essential for understanding human behavior.</li>
+</ol>
+<p><strong>Limitations and Challenges</strong></p>
+<ol>
+<li><strong>Complexity</strong>: The DCM assumes that individuals have complete information about the options available and their prices. In reality, people often lack complete information or may not be able to afford certain options.</li>
+<li><strong>Non-linear relationships</strong>: The model can produce non-linear relationships between demand, price, and other factors, which can make it challenging to interpret results.</li>
+<li><strong>Model assumptions</strong>: The DCM relies on several simplifying assumptions about individual behavior, such as perfect rationality or complete information. These assumptions may not always hold true in real-world situations.</li>
+</ol>
+<p>Despite these limitations, the Discrete Choice Model remains a powerful tool for understanding human decision-making under uncertainty. Its applications are diverse and continue to grow, with implications for fields like healthcare, marketing, transportation, and more.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Edgeworth_Phillips_Curve_with_CES_Preferences.html">Edgeworth Phillips Curve with CES Preferences</a></p>
+<p><a href="Coase_Collusion_in_General_Equilibrium.html">Coase Collusion in General Equilibrium</a></p>
+<p><a href="Hicks_Certainty_Equivalent_in_Matching_Markets.html">Hicks Certainty Equivalent in Matching Markets</a></p>
+<p><a href="Spence_Stability_in_Continuous_Time.html">Spence Stability in Continuous Time</a></p>
+<p><a href="Kalai-Smorodinsky_Welfare_Theorem_under_Time_Inconsistency.html">Kalai-Smorodinsky Welfare Theorem under Time Inconsistency</a></p>
+</div>
+</body>
+</html>
+
