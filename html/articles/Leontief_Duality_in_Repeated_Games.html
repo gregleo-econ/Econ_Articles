@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="generator" content="litedown 0.7">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+</div>
+<div class="body">
+<p><a href="../index.html">← Back to Index</a></p>
+<h1 id="leontief-duality-in-repeated-games">Leontief Duality in Repeated Games</h1>
+<p><strong>Leontief Duality in Repeated Games: A Game-Changing Concept in Game Theory</strong></p>
+<p>In the realm of game theory, a concept known as Leontief Duality has emerged as a revolutionary idea that challenges traditional notions of strategy and decision-making. This phenomenon, first introduced by economist Leonid Leontievich in 1960, is a fundamental principle that has far-reaching implications for our understanding of games, strategies, and the behavior of individuals in situations where multiple players interact simultaneously.</p>
+<p><strong>The Basics of Leontief Duality</strong></p>
+<p>In a repeated game, each player takes turns making moves, which can be either strategic (i.e., choosing to play optimally) or non-strategic (i.e., playing out a suboptimal strategy). The key insight behind Leontief Duality is that the optimal strategy for one player does not necessarily imply the optimal strategy for another player. In other words, if two players are playing simultaneously, their strategies may differ in subtle ways, and the outcome of each game depends on which player’s strategy prevails.</p>
+<p><strong>The Leontief Duality Matrix</strong></p>
+<p>To illustrate this concept, imagine a simple repeated game with two players, Alice and Bob. The game can be represented as follows:</p>
+<ol>
+<li>Alice chooses to play optimally (i.e., maximize her payoff) if she has the option to do so.</li>
+<li>Bob chooses to play optimally (i.e., minimize his payoff) if he has the option to do so.</li>
+<li>If both players choose optimally, they have a tiered strategy: Alice plays optimally, and Bob plays optimally.</li>
+<li>If Alice chooses to play optimally but Bob chooses non-optimally, their strategies are in conflict.</li>
+<li>If Alice chooses to play optimally but Bob chooses optimally, their strategies are in conflict.</li>
+<li>If both players choose optimally, they have a tiered strategy: Alice plays optimally, and Bob plays optimally.</li>
+</ol>
+<p>The Leontief Duality matrix is a table that summarizes the payoffs for each player’s optimal strategy. For example, if Alice chooses to play optimally (i.e., maximize her payoff) and Bob chooses non-optimally (i.e., minimize his payoff), their payoffs are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Alice plays optimally</th>
+<th>Bob plays optimally</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alice’s optimal strategy</td>
+<td>Alice’s optimal strategy</td>
+<td>Bob’s optimal strategy</td>
+</tr>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Alice’s optimal strategy</td>
+<td>Alice’s optimal strategy</td>
+<td>Bob’s optimal strategy</td>
+</tr>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Bob’s optimal strategy</td>
+<td>Bob’s optimal strategy</td>
+<td>Alice’s optimal strategy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Implications of Leontief Duality</strong></p>
+<p>The Leontief Duality matrix has several important implications for game theory and decision-making:</p>
+<ol>
+<li><strong>Non-trivial strategies</strong>: Players may choose suboptimal strategies, even if they are playing optimally or non-optimally. This highlights the complexity of human behavior in situations where multiple players interact simultaneously.</li>
+<li><strong>Tiered strategies</strong>: The matrix shows that a player’s strategy can be divided into two categories: optimal and suboptimal. This underscores the importance of considering both optimal and non-optimal strategies when evaluating game outcomes.</li>
+<li><strong>Conflict resolution</strong>: The Leontief Duality matrix demonstrates how conflicts between players’ strategies can arise, even in situations where they are playing optimally or non-optimally. This highlights the need for effective conflict resolution mechanisms to mitigate these tensions.</li>
+<li><strong>Game theory’s limitations</strong>: The Leontief Duality matrix is a simplification of game theory, as it assumes that players have complete information about their strategies and payoffs. In reality, many games involve incomplete or imperfect information, which can lead to more complex and nuanced outcomes.</li>
+<li><strong>Real-world applications</strong>: The Leontief Duality matrix has practical implications in various fields, such as economics, politics, and international relations, where multiple players interact simultaneously and must negotiate strategies that balance individual interests with collective goals.</li>
+</ol>
+<p>In conclusion, Leontief Duality is a fundamental concept in game theory that challenges traditional notions of strategy and decision-making. By recognizing the complexity of human behavior in situations where multiple players interact simultaneously, we can better understand the intricacies of real-world games and develop more effective strategies for resolving conflicts and achieving optimal outcomes.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Arrow_Evolutionary_Dynamics_in_Overlapping_Generations.html">Arrow Evolutionary Dynamics in Overlapping Generations</a></p>
+<p><a href="Dynamic_Programming_Growth_Model_in_Multi-Agent_Systems.html">Dynamic Programming Growth Model in Multi-Agent Systems</a></p>
+<p><a href="Revealed_Preference_Game_Theory_with_Rational_Expectations.html">Revealed Preference Game Theory with Rational Expectations</a></p>
+<p><a href="Ricardian_Expenditure_Minimization_in_Monetary_Economies.html">Ricardian Expenditure Minimization in Monetary Economies</a></p>
+<p><a href="Matching_Theory_Structural_Models_in_Stochastic_Environments.html">Matching Theory Structural Models in Stochastic Environments</a></p>
+</div>
+</body>
+</html>
+
