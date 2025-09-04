@@ -19,7 +19,11 @@ list_A <- c(
   "Real Business Cycle", "DSGE", "OLG (Overlapping Generations)", "Ramsey",
   "Tullock", "Tatonnement", "Afriat", "Topkis", "Gross Substitutes",
   "Dynamic Programming", "Bellman", "Mechanism Design", "Auction Theory",
-  "Matching Theory", "Revealed Preference"
+  "Matching Theory", "Revealed Preference", "Von Neumann", "Morgenstern",
+  "Cournot", "Bertrand", "Stackelberg", "Shapley", "Gale", "Arrow-Pratt",
+  "Laffer", "Okun", "Solow", "Romer", "Harrod-Domar", "Kaldor",
+  "Tinbergen", "Muth", "Hayek", "Leontief", "Keynes", "Tobin",
+  "Fama", "Mundell", "Fleming", "Blanchard", "Krugman", "Stiglitz"
 )
 
 # List B – Analytical Lenses / Objects of Study
@@ -35,7 +39,13 @@ list_B <- c(
   "Supermodularity", "Growth Model", "Business Cycle", "Phillips Curve",
   "Search and Matching", "Human Capital", "Discrimination", "Estimation",
   "Identification", "Auctions", "Labor Markets", "Marriage Markets",
-  "Structural Models"
+  "Structural Models", "Dynamic Optimization", "Duality", "Elasticity",
+  "Isoquants", "Isocosts", "Profit Maximization", "Cost Minimization",
+  "Utility Maximization", "Expenditure Minimization", "Production Efficiency",
+  "Allocative Efficiency", "Market Failure", "Pareto Efficiency",
+  "Social Welfare", "Regulation", "Price Controls", "Monetary Policy",
+  "Fiscal Policy", "Trade Models", "Exchange Rates", "Capital Accumulation",
+  "Wealth Distribution", "Innovation", "Technological Change"
 )
 
 # List C – Contexts, Conditions, and Extensions
@@ -56,9 +66,19 @@ list_C <- c(
   "with Incomplete Contracts", "with Contract Enforcement Frictions",
   "in Monetary Economies", "in Fiscal Policy Contexts", "in Structural Estimation",
   "in Dynamic Optimization", "with Habit Formation", "in Life-Cycle Models",
-  "in Search-Theoretic Models"
+  "in Search-Theoretic Models", "in DSGE Frameworks", "in International Trade",
+  "in Open Economies", "with Financial Frictions", "under Monetary Union",
+  "with Technology Shocks", "in Capital Markets", "in Credit Markets",
+  "with Liquidity Constraints", "with Demographic Change",
+  "in Housing Markets", "in Labor Market Search", "with Policy Uncertainty",
+  "under Globalization", "with Environmental Constraints",
+  "in Resource Economics", "with Inequality", "with Market Power",
+  "in Network Models", "with Digital Platforms", "in Algorithmic Markets"
 )
 
+# find the product 
+total_articles_possible <- length(unique(list_A)) * length(unique(list_B)) * length(unique(list_C))
+cat("Total number of articles: ", total_articles_possible, "\n")
 
 # Function to generate a single random topic
 generate_topic <- function() {
@@ -102,9 +122,8 @@ article_count <- 0
 cat("Starting continuous article generation...\n")
 cat("HTML will be regenerated and pushed to GitHub every", GENERATIONS_BETWEEN_HTML_UPDATE, "generations\n")
 cat("Press Ctrl+C to stop\n\n")
-
-while (TRUE) {
-  tryCatch({
+# while article_count is less than total_articles_possible
+while (article_count < total_articles_possible) {
     articles <- list.files("markdown_articles", full.names = TRUE)
     articles_count <- length(articles)
     #check if article already exists
@@ -115,6 +134,7 @@ while (TRUE) {
       if (!any(grepl(markdown_filename, articles))) {
         article_exists <- FALSE
       }
+      Sys.sleep(0.1)
     }
     cat("Generating article", articles_count + 1, ":", topic, "\n")
     prompt <- make_prompt_from_topic(topic)
@@ -128,28 +148,13 @@ while (TRUE) {
     # Increment counter and check if it's time for HTML update
     html_update_counter <- html_update_counter + 1
     if (html_update_counter >= GENERATIONS_BETWEEN_HTML_UPDATE) {
-      cat("=== Time for HTML update and GitHub push ===\n")
-      tryCatch({
-        # Run html_maker.r
-        cat("Running html_maker.r...\n")
+      cat("Time for an HTML update and GitHub push.")
         source("html_maker.r")
-        
-        # Run git operations via batch file
-        cat("Pushing to GitHub...\n")
+        cat("Pushing to GitHub")
         system("git_push.bat", wait = TRUE)
-        
-        cat("HTML update and GitHub push completed successfully!\n")
         html_update_counter <- 0  # Reset counter
-      }, error = function(e) {
-        cat("Error during HTML update or GitHub push:", e$message, "\n")
-        cat("Continuing with article generation...\n")
-      })
-      cat("==========================================\n\n")
     }
-  }, error = function(e) {
-    cat("Error generating article", article_count, ":", e$message, "\n")
-    cat("Continuing with next article...\n\n")
-  })
-}
+  }
+
 
 
