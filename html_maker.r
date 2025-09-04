@@ -67,22 +67,13 @@ links <- paste0(sapply(seq_along(list_of_topics), function(id) {
   paste0("[", list_of_topics[id], "](articles/", list_of_html_filenames[id], ")")
 }), collapse = "  \n")
 
-index_md <- paste0("# The Pit\n\nThis place is not for humans. Turn back.\n\n  [What is this?!?](pit.html)\n\n ## ", "Index", "\n\n", links)
+index_md <- paste0("# Economics Articles  \n\n ## ", "Index", "\n\n", links)
 
 # Convert index to HTML and add noindex meta tag
 index_html <- markdown::markdownToHTML(index_md, stylesheet = "style.css", title = "")
 index_html <- add_noindex_meta(index_html)
 
 writeLines(index_html, "html/index.html")
-
-# Generate pit.html
-cat("Generating pit.html...\n")
-pit_md <- "# The Pit\n\nThis is not a real website. This is a proof-of-concept meant to demonstrate a possible way to deter commercial machine learning companies from scraping content from a website in violation of the website owner's terms of service. These pages are 'hallucinated' by a tiny LLM. The content here is not accurate."
-
-pit_html <- markdown::markdownToHTML(pit_md, stylesheet = "style.css", title = "")
-pit_html <- add_noindex_meta(pit_html)
-
-writeLines(pit_html, "html/pit.html")
 
 cat("HTML generation complete! All files saved to html/ directory\n")
 
