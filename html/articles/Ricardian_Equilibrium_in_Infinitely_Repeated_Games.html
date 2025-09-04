@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title></title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bgcol: white;
+  --headerbgcol: white;
+  --headerfgcol: black; 
+  --textcol: black;
+  --linkcol: black; 
+  --visitedlinkcol: black; 
+  --subheadercol: white; 
+  --pretextcol: black; 
+  --prebgcol: white; 
+  --operator: white; 
+  --string: white; 
+  --identifier: white; 
+  --number: white; 
+  --keyword: white; 
+  --literal: white; 
+  --comment: white; 
+  --indent: 40px;
+  --bodyfontsize: 12pt;
+}
+
+footer {
+	margin-top: 100px;
+	font-size: var(--bodyfontsize);
+    
+}
+
+body {
+  font-family: "Tomorrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+	background: var(--bgcol);
+	font-weight: 400;
+	color: var(--textcol);
+	-webkit-font-smoothing: antialiased;
+	font-size: var(--bodyfontsize);
+	width: min(75vw,800px);
+	padding-top: 5pt;
+	margin: auto;
+	border-left: var(--indent) solid transparent;
+	text-decoration-skip-ink: none;
+	line-height: 20pt;
+}
+
+
+
+h1,h2,h3{
+	background: var(--headerbgcol);
+	color: var(--headerfgcol);
+	font-weight: bold;
+	margin-top: var(--bodyfontsize);
+	margin-bottom: 0pt;
+}
+
+h1 {
+	font-size: 18pt;
+	line-height: 20pt;
+	text-transform: uppercase;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h2 {
+	font-size: 16pt;
+	line-height: 18pt;
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+h3 {
+	font-size: 14pt;
+	line-height: 16pt;
+	font-size: var(--bodyfontsize);
+	margin-left: calc(-1*var(--indent)) ;
+}
+
+p.subheader {
+	font-weight: bold;
+	color: var(--subheadercol);
+}
+
+img {
+	padding: 3pt;
+	float: center;
+}
+
+a {
+	color: var(--linkcol);
+	color: inherit;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: var(--visitedlinkcol);
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	color: var(--pretextcol);
+	background: var(--prebgcol);
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+	/*text-decoration: line-through;*/
+}
+
+
+div.footer {
+	font-size: var(--bodyfontsize);
+	font-style: italic;
+	line-height: 12pt;
+	text-align: center;
+	padding-top: 30pt;
+}
+
+
+pre .operator, pre .paren {
+    color: var(--operator);
+}
+
+pre .string, pre .paren {
+    color: var(--string);
+}
+
+pre .identifier, pre .paren {
+    color: var(--identifier);
+}
+
+pre .number, pre .paren {
+    color: var(--number);
+}
+
+pre .keyword, pre .paren {
+    color: var(--number);
+}
+
+pre .literal, pre .paren {
+    color: var(--number);
+}
+
+pre .constant, pre .paren {
+    color: var(--number);
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  display: block;           /* make them block to fix white space margin */
+  border-width: 0px;	
+}
+
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1></h1></div>
+<div class="author"><h2></h2></div>
+<div class="date"><h3></h3></div>
+</div>
+<div class="body">
+<h1 id="ricardian-equilibrium-in-infinitely-repeated-games">Ricardian Equilibrium in Infinitely Repeated Games</h1>
+<p><strong>Ricardian Equilibrium in Infinitely Repeated Games</strong></p>
+<p>In a world where games are infinite, the concept of Ricardian equilibrium may seem like a relic from a bygone era. However, this idea has far-reaching implications for our understanding of strategy and decision-making in seemingly endless game scenarios.</p>
+<p>Ricardian equilibrium is a mathematical framework that describes a situation where two players, each with an equal probability of winning or losing, play a game repeatedly over time. The goal is to find the Nash equilibrium, which is a state where neither player can improve their payoff by unilaterally changing their strategy, assuming all other players keep their strategies unchanged.</p>
+<p>In the context of infinite games, Ricardian equilibrium becomes even more relevant. Imagine a game with an infinite number of possible outcomes, each with its own set of rules and probabilities. The Nash equilibrium in such a game would be a unique solution that satisfies the same payoff for all players. This means that if two players are playing simultaneously, they will converge on the same outcome, regardless of their individual strategies.</p>
+<p>The implications of Ricardian equilibrium in infinite games are profound. It suggests that even with an infinite number of possible outcomes, there is a limit to how many different strategies can be employed by a player. This means that the game designer must carefully plan and manage the game’s complexity to ensure that players have a clear understanding of their options and the Nash equilibrium they need to reach.</p>
+<p>One of the most significant consequences of Ricardian equilibrium in infinite games is that it highlights the importance of strategy selection. In an infinite game, each player has access to a vast number of possible strategies, which can lead to a situation where no single strategy dominates others. This means that players must carefully evaluate their options and choose the one that maximizes their payoff or minimizes their losses.</p>
+<p>Another implication of Ricardian equilibrium in infinite games is that it encourages game designers to consider the long-term consequences of their decisions. In an infinite game, a player’s strategy may not be as effective if they are playing against a different player who has chosen a different strategy. By designing games with a focus on long-term outcomes, game designers can create more engaging and rewarding experiences that reward players for making strategic choices over time.</p>
+<p>Furthermore, Ricardian equilibrium in infinite games raises interesting questions about the nature of strategy itself. If two players are playing simultaneously, do they have equal opportunities to win or lose? Or is there a fundamental limit to how many strategies can be employed by a player? These questions challenge our understanding of strategy and decision-making in an infinite game scenario.</p>
+<p>In conclusion, Ricardian equilibrium in infinite games offers a powerful framework for analyzing the behavior of complex systems where multiple players interact over time. By recognizing the limits of strategy selection and the long-term consequences of decisions, game designers can create more engaging and rewarding experiences that reward players for their strategic choices. As we continue to explore the boundaries of infinite games, Ricardian equilibrium will remain a crucial tool in our understanding of strategy and decision-making in an ever-changing world.</p>
+<h2 id="see-also">See also</h2>
+<p><a href="Mechanism_Design_Public_Goods_with_Contract_Enforcement_Frictions.html">Mechanism Design Public Goods with Contract Enforcement Frictions</a></p>
+<p><a href="Auction_Theory_Utility_Function_with_CES_Preferences.html">Auction Theory Utility Function with CES Preferences</a></p>
+<p><a href="Akerlof_Utility_Function_with_Heterogeneous_Agents.html">Akerlof Utility Function with Heterogeneous Agents</a></p>
+<p><a href="Lindahl_Signaling_in_Repeated_Games.html">Lindahl Signaling in Repeated Games</a></p>
+<p><a href="Debreu_Structural_Models_in_Matching_Markets.html">Debreu Structural Models in Matching Markets</a></p>
+</div>
+</body>
+</html>
