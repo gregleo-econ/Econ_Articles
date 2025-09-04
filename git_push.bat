@@ -1,0 +1,9 @@
+@echo off
+echo Adding all changes to git...
+git add .
+
+echo Committing changes...
+git commit -m "Auto-update: Generated new articles and HTML files"
+
+echo Pushing to GitHub...
+git push 

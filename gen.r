@@ -93,9 +93,14 @@ make_filename_from_topic <- function(topic, extension) {
 # Create output directories
 dir.create("markdown_articles", showWarnings = FALSE)
 
+# Configuration for periodic operations
+GENERATIONS_BETWEEN_HTML_UPDATE <- 10  # Change this to adjust frequency
+html_update_counter <- 0
+
 # Continuous article generation loop
 article_count <- 0
 cat("Starting continuous article generation...\n")
+cat("HTML will be regenerated and pushed to GitHub every", GENERATIONS_BETWEEN_HTML_UPDATE, "generations\n")
 cat("Press Ctrl+C to stop\n\n")
 
 while (TRUE) {
@@ -119,6 +124,28 @@ while (TRUE) {
     cat("Writing to file: ", markdown_filename, "\n")
     writeLines(markdown_article, file.path("markdown_articles", markdown_filename))
     cat("Article", articles_count + 1, "saved successfully!\n\n")
+    
+    # Increment counter and check if it's time for HTML update
+    html_update_counter <- html_update_counter + 1
+    if (html_update_counter >= GENERATIONS_BETWEEN_HTML_UPDATE) {
+      cat("=== Time for HTML update and GitHub push ===\n")
+      tryCatch({
+        # Run html_maker.r
+        cat("Running html_maker.r...\n")
+        source("html_maker.r")
+        
+        # Run git operations via batch file
+        cat("Pushing to GitHub...\n")
+        system("git_push.bat", wait = TRUE)
+        
+        cat("HTML update and GitHub push completed successfully!\n")
+        html_update_counter <- 0  # Reset counter
+      }, error = function(e) {
+        cat("Error during HTML update or GitHub push:", e$message, "\n")
+        cat("Continuing with article generation...\n")
+      })
+      cat("==========================================\n\n")
+    }
   }, error = function(e) {
     cat("Error generating article", article_count, ":", e$message, "\n")
     cat("Continuing with next article...\n\n")
